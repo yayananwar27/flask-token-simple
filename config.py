@@ -36,7 +36,7 @@ class ApplicationConfig:
     #SESSION_TYPE = "redis"
     #SESSION_PERMANENT = False
     #SESSION_USE_SIGNER = True
-    #SESSION_REDIS = redis.from_url("redis://172.16.26.97:6379")
+    #SESSION_REDIS = redis.from_url("redis://<IP redis server:PORT")
 
     APISPEC_SPEC = APISpec(
         title='Hotspot Jakwifi Project',
