@@ -9,7 +9,7 @@ import redis
 class redis_conn:
     def __init__(self):
         self.key = ''
-        self.r = redis.from_url("redis://172.16.26.97:6379")
+        self.r = redis.from_url("redis://<IP SERVER REDIS>:6379")
         self.value = ''
         
     def get(self, key):
@@ -27,7 +27,7 @@ class redis_conn:
 
 class ApplicationConfig:
     #SECRET_KEY = os.environ["SECRET_KEY"]
-    SECRET_KEY = "sehHfnNIpSJQU1giolCrp1jffAuUW9vPRjBoOSl-0ek"
+    SECRET_KEY = "<YOUR SECRET KEY>"
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_ECHO = True
